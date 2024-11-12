@@ -1,0 +1,51 @@
+.cardServices{
+    width: 300px;
+    padding: 20px 10px;
+    border: 1px solid #d4dcff;
+    background-color: #f3f7fb;
+    border-radius:30px ;
+    margin-top: 10px;
+    h3{
+        font-size: 24px;
+        margin: 5px 0;
+    }
+    p{
+        color: #333;
+        margin: 5px 0;
+    }
+    button{
+        padding: 10px;
+        border-radius:30px ;
+        border: 1px solid #d4dcff;
+        margin: 5px 0;
+        color: #333;
+    }
+    .img-border{
+        width: max-content;
+        padding: 10px;
+        border: 1px solid #d4dcff;
+        border-radius:10px ;
+    }
+
+}
+.cardNumbers{
+    background-color: #18185e;
+    color: white;
+    width: 300px;
+    padding: 20px 10px;
+    border-radius:30px ;
+    margin-top: 10px;
+    p{
+        color: rgb(146, 146, 146);
+    }
+    .num{
+        color: #18185e;
+        -webkit-text-stroke :2px rgb(146, 146, 146);
+        font-size:50px;
+    }
+    .num:hover{
+        -webkit-text-stroke :2px #fff;
+    
+    }
+}
+

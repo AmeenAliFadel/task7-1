@@ -1,0 +1,74 @@
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px 100px;
+    border-bottom:1px solid #d4dcff ;
+}
+.logos2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px 100px;
+    .yes{
+        display: flex ;
+        align-items: center;
+        gap: 10px;
+        font-size: 30px;
+    }
+    .none{
+        display: flex ;
+        align-items: center;
+        gap: 10px;
+        font-size: 30px;
+    }
+}
+
+.logo-img{
+    width: 190px;
+    margin: 20px 0;
+}
+.ball{
+    text-align: center;
+}
+.ball img{
+    margin-top: -60px;
+    background-color: white;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+@media (max-width:580px){
+    .logos{
+        justify-content: center;
+    }
+    .logos2{
+        padding: 30px 50px;
+    }
+    .logos2 .yes,
+    .logos2 .none{
+        font-size: 20px;
+    }
+    .logos2 .yes img,
+    .logos2 .none img{
+        width: 25px;
+    }
+    .none{
+        display: none !important;
+    }
+}
+@media (max-width:992px){
+    .ball{
+        display: none ;
+    }
+    .logos2 .yes,
+    .logos2 .none{
+        margin: 10px auto;
+    }
+}

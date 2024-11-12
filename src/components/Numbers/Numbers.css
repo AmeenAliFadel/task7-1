@@ -1,0 +1,25 @@
+.numSec{
+    background-color: #18185e;
+    width: 100%;
+    margin-top: -170px;
+    padding-top: 200px;
+
+    .numberBox{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+@media(max-width:1430px){
+    .numSec .numberBox{
+        justify-content: center;
+    }
+    
+}
+@media(max-width:992px){
+    .numSec{
+        margin-top: -100px;
+        padding-top: 150px;
+    }
+}

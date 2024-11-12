@@ -1,0 +1,40 @@
+.TestimonialsCard{
+    width: 390px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+.TestimonialsCardBlue{
+    width: 390px;
+    background-color: #384bff;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: url(./../../assets/images/testimonialShape3_1.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.icons-div{
+    color: #faa318;
+    margin: 10px 0;
+}
+.first-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    svg{
+        font-size: 50px;
+        margin-right: 20px;
+    }
+}
+.second-div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+@media (max-width:890px){
+    .TestimonialsCard{
+        display: none;
+    }
+}

@@ -1,0 +1,38 @@
+.AboutLogos{
+    padding: 100px 100px;
+}
+.AboutLogosTitle{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.line{
+    
+    width: 40%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.316);
+    
+}
+.AboutLogosImg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 50px 0;
+    img{
+        margin-top: 10px;
+    }
+}
+.photo1{
+    filter: grayscale(100%);
+}
+@media (max-width:992px){
+    .photo1{
+        display: none;
+    }
+    .AboutLogosImg{
+        justify-content: center;
+    }
+}

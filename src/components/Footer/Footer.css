@@ -1,0 +1,140 @@
+.FOOTER1 {
+    background-color: #18185e;
+    padding-top: 100px;
+    margin-top: -100px;
+    color: white;
+}
+.FOOTER2 {
+    background-color: #18185e;
+    padding-top: 160px;
+    margin-top: -160px;
+    color: white;
+}
+.footerDad {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0 0;
+}
+
+.footer1 {
+    width: 300px;
+
+    img {
+        padding: 10px 0;
+    }
+
+    p {
+        padding: 10px 0;
+    }
+}
+
+.footer-icons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.icons-border {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.footer2 {
+    h2 {
+        border-bottom: 1px solid white;
+        
+    }
+
+    ul {
+
+        list-style: none;
+        padding: 10px 0;
+
+        li {
+            padding: 5px 0;
+        }
+    }
+}
+
+.footer3 {
+    h2 {
+        width: max-content;
+        border-bottom: 1px solid white;
+        margin-bottom: 10px;
+    }
+}
+
+.footer3Div {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 30px;
+
+    div {
+        h5 {
+            color: rgba(255, 255, 255, 0.704);
+            padding-bottom: 5px;
+        }
+    }
+
+}
+
+.footer4 {
+    h2 {
+        border-bottom: 1px solid white;
+    }
+
+    ul {
+
+        list-style: none;
+        padding: 10px 0;
+
+        li {
+            padding: 5px 0;
+
+            .email {
+                border-radius: 10px;
+                padding: 15px;
+            }
+
+            button {
+                margin-left: -40px;
+                border-radius: 7px;
+                padding: 10px;
+                border: none;
+                color: white;
+                background-color: #384bff;
+            }
+            .checkbox{
+                margin-right: 2px;
+            }
+        }
+    }
+}
+.down{
+    background-color:#384bff ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+}
+@media (max-width:1160px){
+    .FOOTER2{
+        margin-top: -220px;
+        padding-top: 220px;
+    }
+    .footerDad {
+        justify-content: center;
+    }
+}
+@media (max-width:653px){
+    .FOOTER2{
+        margin-top: -400px;
+        padding-top: 400px;
+    }
+}

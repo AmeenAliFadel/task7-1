@@ -1,0 +1,90 @@
+.PricingSection{
+    background-image: url(./../../assets/images/pricingShape1_1.webp);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    .pricing-services {
+        margin-top: 50px;
+        font-size: 24px;
+        text-align: center;
+        background-image: url(./../../assets/images/pricingShape1_2.webp);
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-right: 20px;
+    
+        .div1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            h5,
+            svg {
+                color: #384bff;
+                gap: 5px;
+            }
+        }
+    
+        .div2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .buttons {
+                border: 2px solid #d4dcff;
+                border-radius: 50px;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                height: max-content;
+                margin: 5px 0;
+    
+                button {
+                    border: none;
+                    color: #384bff;
+                    border-radius: 25px;
+                    padding: 8px;
+                    height: max-content;
+                    background-color: white;
+                    transition: .1s;
+                }
+    
+                button:hover {
+                    background-color: #384bff;
+                    color: white;
+                }
+            }
+    
+            img {
+                width: 90px;
+                margin: 0 10px;
+            }
+    
+            p {
+                color: #384bff;
+            }
+        }
+    
+    
+    }
+    .PricingCards{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0 70px ;
+    }
+}
+
+
+@media (max-width:992px) {
+    .PricingSection .pricing-services,
+    .PricingSection {
+        background-image: none;
+        background-position: none;
+    }
+    .PricingSection .PricingCards{
+        margin: 0 0;
+    }
+
+    .pricing-services .div2 {
+        flex-direction: column;
+    }
+}

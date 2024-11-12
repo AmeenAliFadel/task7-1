@@ -1,0 +1,34 @@
+.AboutCard{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.AboutCard img{
+    width: 100%;
+    height: 280px;
+}
+.AboutCardDesc{
+    text-align: center;
+    background-color: #18185e;
+    color: white;
+    padding: 28px;
+    border-radius: 10px;
+    margin-top: -30px;
+    margin-bottom: -15px;
+    position: relative;
+    transform:  skewY(-5deg);
+}
+.AboutCardDesc .hhh{
+    transform: rotate(5deg);
+    padding: 10px 0;
+}
+.AboutCardDesc .icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #384bff;
+    transform: rotate(5deg);
+    position: absolute;
+    top: -10px;
+    right: 20px;
+}
