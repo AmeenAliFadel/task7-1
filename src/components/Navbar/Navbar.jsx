@@ -7,6 +7,7 @@ import logo from '../../assets/images/logo.svg'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
+import plane from './../../assets/images/plane.webp'
 export default function Navbar({ x }) {
     const [IsOpen, setIsOPen] = useState(false)
     const handleOpen = () => {
@@ -14,11 +15,17 @@ export default function Navbar({ x }) {
     }
     return (
         <nav className={x ? 'Af-Navbar' : 'Af-Navbar2'}>
+            {
+                !x && <div className='img1'>
+                    <img src={plane} alt="" />
+                </div>
+            }
+
             <div>
                 <img src={logo} alt="" />
             </div>
             <div className='section-2'>
-                <ul className={x  ? `Af-menu ${IsOpen ? "open" : ""}` : `Af-menu ${IsOpen ? "open2" : ""}` }  >
+                <ul className={x ? `Af-menu ${IsOpen ? "open" : ""}` : `Af-menu ${IsOpen ? "open2" : ""}`}  >
                     <li>
                         <Link to={'/'}>
                             Home
@@ -46,7 +53,7 @@ export default function Navbar({ x }) {
                     {
                         IsOpen &&
                         <li>
-                            <FontAwesomeIcon icon={faXmark} onClick={handleOpen}/>
+                            <FontAwesomeIcon icon={faXmark} onClick={handleOpen} />
                         </li>
                     }
                 </ul>
@@ -54,14 +61,24 @@ export default function Navbar({ x }) {
             <div className="section-3">
                 <CiSearch />
                 <FaCartShopping />
+                {x && <button><Link to={'/signup'}>
+                    GET A QUOTE
+                </Link>
+                    <FaLongArrowAltRight />
+                </button>}
+                <FontAwesomeIcon className='iconBars' icon={faBars} onClick={handleOpen} />
+            </div>
+            {!x&&<div className='tmain'>
+                <div className='t1'>
+                </div>
                 <button><Link to={'/signup'}>
                     GET A QUOTE
                 </Link>
                     <FaLongArrowAltRight />
                 </button>
-                <FontAwesomeIcon className='iconBars' icon={faBars} onClick={handleOpen} />
+            </div>}
+            
 
-            </div>
         </nav>
     )
 }
